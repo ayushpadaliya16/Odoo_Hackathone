@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayflow - HRMS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .hidden {
+            display: none;
+        }
+        /* Custom scrollbar for better look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+    </style>
+</head>
+<body class="h-screen overflow-hidden flex flex-col">
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed top-5 right-5 z-50 hidden px-4 py-2 rounded shadow-lg text-white transition-opacity duration-300"></div>
+
+    <!-- Main App Container -->
+    <div id="app" class="flex-1 flex overflow-hidden relative">
+        <!-- Content will be injected here by app.js -->
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
